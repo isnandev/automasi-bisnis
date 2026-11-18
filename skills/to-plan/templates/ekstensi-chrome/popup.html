@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Asisten Toko</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body { width: 360px; padding: 12px; display: grid; gap: 12px; }
+      header { display: flex; align-items: center; justify-content: space-between; }
+      .row { display: flex; gap: 8px; flex-wrap: wrap; }
+      #ambil { width: 100%; }
+      .list { max-height: 220px; overflow: auto; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Asisten Toko</h1>
+      <button class="ghost" id="pengaturan" type="button">Pengaturan</button>
+    </header>
+
+    <button class="primary" id="ambil" type="button">Ambil data dari halaman ini</button>
+
+    <section class="card" aria-labelledby="judul-data">
+      <p id="judul-data" class="muted"><span id="jumlah">0</span> data tersimpan</p>
+      <div class="list">
+        <table>
+          <thead>
+            <tr><th>Nama</th><th class="num">Harga</th></tr>
+          </thead>
+          <tbody id="daftar"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="row">
+      <button id="unduh" type="button">Unduh CSV</button>
+      <button id="kirim" type="button">Kirim ke OctoBuild</button>
+      <button class="ghost" id="hapus" type="button">Hapus semua</button>
+    </div>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>

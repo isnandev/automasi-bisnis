@@ -1,0 +1,22 @@
+{
+  "name": "automasi-bisnis",
+  "version": "1.0.0",
+  "description": "Temukan pekerjaan yang bisa diotomasi dengan AI, lalu buat tool bisnis pribadi (dashboard, jadwal otomatis, ekstensi Chrome) yang terhubung ke OctoBuild.",
+  "author": {
+    "name": "Isnan"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./mcp.claude.json",
+  "interface": {
+    "displayName": "Automasi Bisnis",
+    "shortDescription": "Otomasi bisnis dengan AI dan tool pribadi.",
+    "longDescription": "Temukan pekerjaan yang bisa diotomasi dengan AI, lalu buat tool bisnis pribadi (dashboard, jadwal otomatis, ekstensi Chrome) yang terhubung ke OctoBuild.",
+    "developerName": "Isnan",
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Mulai: cek kesiapan komputerku",
+      "Analisa pekerjaanku",
+      "Hubungkan ke OctoBuild"
+    ]
+  }
+}

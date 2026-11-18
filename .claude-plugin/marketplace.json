@@ -1,0 +1,7 @@
+{
+  "name": "automasi-bisnis",
+  "owner": { "name": "Isnan" },
+  "plugins": [
+    { "name": "automasi-bisnis", "source": "./", "version": "1.0.0", "description": "Temukan pekerjaan yang bisa diotomasi dengan AI, lalu buat tool bisnis pribadi (dashboard, jadwal otomatis, ekstensi Chrome) yang terhubung ke OctoBuild." }
+  ]
+}

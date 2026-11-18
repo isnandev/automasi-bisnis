@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Asisten Toko",
+  "version": "0.1.0",
+  "description": "Ambil data dari halaman yang sedang dibuka, simpan, unduh CSV, atau kirim ke OctoBuild.",
+  "action": {
+    "default_title": "Asisten Toko",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://hooks.octobuild.site/*"]
+}

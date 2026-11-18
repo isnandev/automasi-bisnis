@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "octobuild": {
+      "serverUrl": "https://app.octobuild.site/mcp"
+    }
+  }
+}

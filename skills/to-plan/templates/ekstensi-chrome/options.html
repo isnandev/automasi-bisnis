@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengaturan Asisten Toko</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body { padding: 24px 16px; }
+      main { max-width: 520px; margin: 0 auto; display: grid; gap: 16px; }
+      form { display: grid; gap: 12px; }
+      .row { display: flex; gap: 8px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Pengaturan Asisten Toko</h1>
+      <form id="form" class="card">
+        <label>
+          URL webhook OctoBuild
+          <input name="webhookUrl" type="url" required autocomplete="off" spellcheck="false"
+                 placeholder="https://hooks.octobuild.site/in/..."
+                 pattern="https://hooks\.octobuild\.site/in/.+" />
+        </label>
+        <label>
+          Secret webhook
+          <input name="webhookSecret" type="password" required autocomplete="off" spellcheck="false" placeholder="whsec_..." />
+        </label>
+        <p class="muted">
+          Ambil keduanya di dashboard OctoBuild → Integrasi → Webhook. Secret hanya tersimpan di browser ini
+          dan hanya bisa mengirim data ke satu endpoint itu.
+        </p>
+        <div class="row">
+          <button class="primary" type="submit">Simpan</button>
+          <button class="ghost" id="hapus" type="button">Hapus pengaturan</button>
+        </div>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script src="options.js" type="module"></script>
+  </body>
+</html>

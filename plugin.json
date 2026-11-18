@@ -1,0 +1,14 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "automasi-bisnis",
+  "displayName": "Automasi Bisnis",
+  "version": "1.0.0",
+  "description": "Temukan pekerjaan yang bisa diotomasi dengan AI, lalu buat tool bisnis pribadi (dashboard, jadwal otomatis, ekstensi Chrome) yang terhubung ke OctoBuild.",
+  "suggestedPrompts": [
+    "Mulai: cek kesiapan komputerku",
+    "Analisa pekerjaanku, aku punya toko online di Shopee dan Tokopedia",
+    "Buatkan ekstensi Chrome untuk mengambil harga kompetitor"
+  ],
+  "author": { "name": "Isnan" },
+  "keywords": ["automasi", "bisnis", "umkm", "dashboard", "chrome-extension", "octobuild"]
+}
